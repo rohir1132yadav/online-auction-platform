@@ -1,16 +1,16 @@
 import Error from "../Error";
 import { OpenLayout } from "../layout/OpenLayout";
-import {About} from "../pages/About";
-import { Contact } from "../pages/Contact";
-import { Landing } from "../pages/Landing";
-import AcceptableUsePolicy from "../pages/legal/AcceptableUsePolicy";
-import CodeOfConduct from "../pages/legal/CodeOfConduct";
-import DMCAPolicy from "../pages/legal/DMCAPolicy";
-import Legal from "../pages/legal/Legal";
-import PrivacyPolicy from "../pages/legal/PrivacyPolicy";
-import TermsOfService from "../pages/legal/TermsOfService";
-import Login from "../pages/Login";
-import Signup from "../pages/Signup";
+import {About} from "../Pages/About";
+import { Contact } from "../Pages/Contact";
+import { Landing } from "../Pages/Landing";
+import AcceptableUsePolicy from "../Pages/legal/AcceptableUsePolicy";
+import CodeOfConduct from "../Pages/legal/CodeOfConduct";
+import DMCAPolicy from "../Pages/legal/DMCAPolicy";
+import Legal from "../Pages/legal/Legal";
+import PrivacyPolicy from "../Pages/legal/PrivacyPolicy";
+import TermsOfService from "../Pages/legal/TermsOfService";
+import Login from "../Pages/Login";
+import Signup from "../Pages/Signup";
 
 export const openRoutes = [
   {

@@ -1,6 +1,6 @@
 import { AdminLayout } from "../layout/AdminLayout";
-import { AdminDashboard } from "../pages/Admin/AdminDashboard";
-import { UsersList } from "../pages/Admin/UsersList";
+import { AdminDashboard } from "../Pages/Admin/AdminDashboard";
+import { UsersList } from "../Pages/Admin/UsersList";
 
 export const adminRouter = [
   {

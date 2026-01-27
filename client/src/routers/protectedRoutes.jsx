@@ -1,11 +1,11 @@
 import Error from "../Error";
-import { ViewAuction } from "../pages/ViewAuction";
+import { ViewAuction } from "../Pages/ViewAuction";
 import { MainLayout } from "../layout/MainLayout";
-import { AuctionList } from "../pages/AuctionList";
-import { CreateAuction } from "../pages/CreateAuction";
-import { MyAuction } from "../pages/MyAuction";
-import Profile from "../pages/Profile";
-import Privacy from "../pages/Privacy";
+import { AuctionList } from "../Pages/Auction";
+import { CreateAuction } from "../Pages/CreateAuction";
+import { MyAuction } from "../Pages/MyAuction";
+import Profile from "../Pages/Profile";
+import Privacy from "../Pages/Privacy";
 
 export const protectedRoutes = [
   {

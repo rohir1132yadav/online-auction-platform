@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { useParams, Link } from "react-router";
+import { useParams, Link } from "react-router-dom";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { placeBid, viewAuction } from "../api/auction.js";
 import { useSelector } from "react-redux";

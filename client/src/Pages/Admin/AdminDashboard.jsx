@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import AuctionCard from '../../components/AuctionCard';
 import LoadingScreen from '../../components/LoadingScreen';
 import { getAdminDashboard, getAllUsers } from '../../api/admin';

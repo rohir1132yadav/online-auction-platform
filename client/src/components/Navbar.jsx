@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, NavLink, useNavigate } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../store/auth/authSlice";
 import {
@@ -50,27 +50,27 @@ export const Navbar = () => {
 
   return (
     <>
-      <header className="bg-white shadow-sm sticky top-0 z-40">
-        <div className="container mx-auto px-4 py-4">
+      <header className="bg-white shadow-md sticky top-0 z-40">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
-              <RiAuctionLine className="h-6 w-6 text-gray-700 " />
-              <span className="text-xl font-bold text-gray-900 ">
+            <Link to="/" className="flex items-center space-x-2 flex-shrink-0">
+              <RiAuctionLine className="h-7 w-7 text-gray-700" />
+              <span className="text-xl font-bold text-gray-900">
                 Online Auction
               </span>
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-6">
+            <nav className="hidden md:flex items-center space-x-8">
               {(user ? getNavLinks(user.user.role) : navMenu).map((item) => (
                 <NavLink
                   to={item.link}
                   key={item.link}
                   className={({ isActive }) =>
                     isActive
-                      ? "text-indigo-600 hover:text-indigo-800 font-medium"
-                      : "text-gray-600 hover:text-gray-800 font-medium"
+                      ? "text-blue-600 hover:text-blue-700 font-semibold text-sm transition-colors"
+                      : "text-gray-600 hover:text-gray-800 font-medium text-sm transition-colors"
                   }
                 >
                   {item.name}
@@ -81,11 +81,11 @@ export const Navbar = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMenu}
-              className="text-gray-600 hover:text-gray-900 focus:outline-none"
+              className="md:hidden text-gray-600 hover:text-gray-900 focus:outline-none"
               aria-expanded={isMenuOpen}
               aria-label="Toggle menu"
             >
-              <MdMenuOpen className="h-6 w-6" />
+              <MdMenuOpen className="h-7 w-7" />
             </button>
           </div>
         </div>

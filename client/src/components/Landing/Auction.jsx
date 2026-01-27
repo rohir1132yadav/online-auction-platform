@@ -1,5 +1,5 @@
 import { FaClock, FaArrowRight, FaChevronRight } from "react-icons/fa";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 // import { AdsComponent } from "../AdsComponent";
 
 export const Auction = () => {

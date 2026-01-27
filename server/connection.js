@@ -1,13 +1,13 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 
-const connectDB = async () => {
-  try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/auction-platform');
-    console.log('MongoDB connected successfully');
-  } catch (error) {
-    console.error('MongoDB connection error:', error);
-    process.exit(1);
-  }
-};
-
-module.exports = connectDB;
+export const connectDB = async () => {
+    try {
+        await mongoose.connect(process.env.MONGO_URL)
+        console.log('Connected to MongoDB');
+    } catch (error) {
+        console.log('Error connecting to MongoDB:', error.message);
+        console.log('MongoDB URL:', process.env.MONGO_URL);
+    }
+}
